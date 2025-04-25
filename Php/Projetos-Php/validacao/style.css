@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    color: white;
+}
+.containerPai{
+    width: 100%;
+    height: 100vh;
+    background: rgb(24,24,27);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card{
+    background-color: rgba(255, 255, 255, 0.082);
+    padding: 60px 52px;
+    border-radius: 32px;
+    padding: 40px 32px;
+}
+form{
+    display: flex;
+    
+    flex-direction: column;
+    gap: 12px;
+    
+    
+}
+h1{
+    font-family: sans-serif;
+    margin-bottom: 12px;
+    
+}
+input{
+    background-color: rgba(255, 255, 255, 0.171);
+    color: rgba(255, 255, 255, 0.856);
+    outline: none;
+    
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+
+}
+input:focus{
+    border: 1px solid rgba(255, 255, 255, 0.147);
+}
+button{
+    font-size: 16px;
+    
+    padding: 8px 12px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    margin-top: 8px;
+    font-weight: 600;
+}
+/*erros*/
+.erro{
+    border-radius: 8px;
+    background-color: rgb(238, 158, 158);
+    padding: 6px 10px;
+    color: rgb(255, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+h3{
+    font-size: 16px;
+    font-weight: 500;
+}
+.erro:after{
+    content:"";
+    position: absolute;
+    bottom: 100%;
+    left: 8%;
+    z-index: 10;
+    border: solid 6px yellow;
+    border-color: transparent transparent rgb(238, 158, 158) transparent;
+}
+h2{
+    color: rgb(0, 122, 0);
+    font-size: 16px;
+    margin-top: 8px;
+}
